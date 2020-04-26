@@ -71,8 +71,7 @@ def percolation(m,n,intervals):
     df.plot(x='p', y='theta')
     plt.show()
 
-def main():
-
+def main():#how to run: python percolation.py 10 10 [-i or --intervals] number of intervals 
     parser = argparse.ArgumentParser()
     parser.add_argument("m")
     parser.add_argument("n")
