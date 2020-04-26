@@ -67,6 +67,7 @@ def percolation(m,n,intervals, attempts):
         df = df.append(dft, ignore_index=True)
 
     print(df)
+    df.to_csv('data.csv')
     #df.plot()
 
     df.plot(x='p', y='theta')
