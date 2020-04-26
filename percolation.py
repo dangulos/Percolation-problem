@@ -10,11 +10,9 @@ import depthfirst
 from mazes import Maze
 
 def percolation(m,n,intervals):
-    print(type(m),' ',type(n),' ',type(intervals))
     m = int(m)
     n = int(n)
     intervals = int(intervals)
-    print(type(m),' ',type(n),' ',type(intervals))
     deltaP = 1/intervals
     #Zalpha/2 para alpha = 99%
     ZAlphaHalf = 2.575
