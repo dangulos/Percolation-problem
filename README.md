@@ -25,7 +25,7 @@ Esto puede hacerse mediante el uso del los comandos:
         pip install matplotlib
         </code></pre>
 Para realizar una simulacion se debe usar el siguiente comando:
-<pre><code>python percolation.py [-i or --intervals] number of intervals [-a or --attempts] number of attempts
+<pre><code>python percolation.py n m [-i or --intervals] number of intervals [-a or --attempts] number of attempts
         </code></pre>
 
 Donde n y m corresponden al tamaño de la matriz a usar.
