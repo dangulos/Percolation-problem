@@ -66,11 +66,15 @@ def percolation(m,n,intervals, attempts):
         #print(dft)
         df = df.append(dft, ignore_index=True)
 
+    df.insert(3, "maxTheta", df["theta"]+df["error"]) 
+    df.insert(4, "minTheta", df["theta"]-df["error"]) 
     print(df)
     df.to_csv('data.csv')
     #df.plot()
     
-    df.plot(x='p', y='theta')
+    df.plot(x='p', y=['theta','maxTheta','minTheta'])
+
+
     """
     plt.table(cellText= df.to_numpy(),
               rowLabels=range(0,intervals+1),
