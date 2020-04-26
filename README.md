@@ -1,6 +1,6 @@
 # MANUAL TECNICO QUINTO PUNTO PARCIAL ESTOCÁSTICOS
 
-## Modelos Estocasticos MO2
+## Modelos Estocásticos MO2
 
 ## Profesor: Jorge Eduardo Ortiz Triviño
 
@@ -13,7 +13,7 @@
 - Gabriel David Aguirre Arias
 
 ## Diseño General
-Se realizo un programa en Python para simular el problema de "La percolación", se necesita instalar las siguientes librerias para su funcionamiento:
+Se realizó un programa en Python para simular el problema de "La percolación", se necesita instalar las siguientes librerías para su funcionamiento:
 
 - pandas
 - numpy
@@ -30,8 +30,8 @@ Para realizar una simulacion se debe usar el siguiente comando:
 
 Donde n y m corresponden al tamaño de la matriz a usar.
 
+La programa consiste en tres partes, el percolation el cual contiene la lógica general y coordina las actividades, el mazes el cual se encarga de generar la roca como un conjunto de nodos y el depth-first-search que se encarga de buscar un camino en la roca generada.
 
-La programa consiste en tres partes, el percolation el cual contiene la logica general y coordina las activiades, el mazes el cual se encarga de generar la roca como un conjunto de nodos y el depth-first-search que se encarga de buscar un camino en la roca generada.
 
 
 ![DIagrama UML de actividades](diagram.jpg)
@@ -99,10 +99,10 @@ el diagrama explica el funcionamiento general del programa
 
 ![Grafica del primer caso](1grap.jpg)
 <p align="center">
-Grafica correspondiente al primer caso de prueba
+Gráfica correspondiente al primer caso de prueba
 </p>
 
-- Haciendo uso de una matriz 150 * 67, con 200 iteraciones y intervalos de 0.02 se obtuvo la siguiente tabla:
+- Haciendo uso de una matriz 150 * 67, con 200 iteraciones y intervalos de 0.02 se obtuvo la siguiente tabla: 
   
 FIELD1|p                 |theta|error               |maxTheta           |minTheta             |
 |------|------------------|-----|--------------------|-------------------|---------------------|
@@ -160,7 +160,7 @@ FIELD1|p                 |theta|error               |maxTheta           |minThet
 
 ![Grafica del segundo caso](2grap.jpg)
 <p align="center">
-Grafica correspondiente al segundo caso de prueba
+Gráfica correspondiente al segundo caso de prueba
 </p>
 
 - Haciendo uso de una matriz 67 * 150, con 200 iteraciones y intervalos de 0.02 se obtuvo la siguiente tabla:
@@ -221,7 +221,7 @@ Grafica correspondiente al segundo caso de prueba
 
 ![Grafica del primer caso](3grap.jpg)
 <p align="center">
-Grafica correspondiente al tercer caso de prueba
+Gráfica  correspondiente al tercer caso de prueba
 </p>
 
 - Haciendo uso de una matriz 100 * 10, con 100 iteraciones y intervalos de 0.01 se obtuvo la siguiente tabla:
@@ -332,9 +332,9 @@ Grafica correspondiente al tercer caso de prueba
 
 ![Grafica del primer caso](4grap.jpg)
 <p align="center">
-Grafica correspondiente al cuarto caso de prueba
+Gráfica correspondiente al cuarto caso de prueba
 </p>
 
-## Analisis de resultados
+## Análisis de resultados
 
-En la mayoria de casos se puede ver que pasado cierto punto la probabilidad tiende a 1 y que el punto en donde se llega a esa tendencia depende del valor de m*n, entre mas bajo este, se necesita una probabilidad mayor para encontrar caminos efectivos, esto se puede observar tanto en las graficas, como en las tablas, segun las graficas obtenidas se puede decir que se asemeja a una distribucion normal o gaussiana.
+En la mayoría de casos se puede ver que pasado cierto punto la probabilidad tiende a 1 y que el punto en donde se llega a esa tendencia depende del valor de m*n, entre más bajo este, se necesita una probabilidad mayor para encontrar caminos efectivos, esto se puede observar tanto en las gráficas, como en las tablas, según las gráficas obtenidas se puede decir que se asemeja a una distribución normal o gaussiana.
