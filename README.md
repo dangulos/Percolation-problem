@@ -24,8 +24,15 @@ Esto puede hacerse mediante el uso del los comandos:
         pip install numpy
         pip install matplotlib
         </code></pre>
+Para realizar una simulacion se debe usar el siguiente comando:
+<pre><code>python percolation.py [-i or --intervals] number of intervals [-a or --attempts] number of attempts
+        </code></pre>
+
+Donde n y m corresponden al tamaño de la matriz a usar.
+
 
 La programa consiste en tres partes, el percolation el cual contiene la logica general y coordina las activiades, el mazes el cual se encarga de generar la roca como un conjunto de nodos y el depth-first-search que se encarga de buscar un camino en la roca generada.
+
 
 ![DIagrama UML de actividades](diagram.jpg)
 <p align="center">
@@ -92,7 +99,7 @@ el diagrama explica el funcionamiento general del programa
 
 ![Grafica del primer caso](1grap.jpg)
 <p align="center">
-grafica correspondiente al primer caso de prueba
+Grafica correspondiente al primer caso de prueba
 </p>
 
 - Haciendo uso de una matriz 150 * 67, con 200 iteraciones y intervalos de 0.02 se obtuvo la siguiente tabla:
@@ -330,4 +337,4 @@ Grafica correspondiente al cuarto caso de prueba
 
 ## Analisis de resultados
 
-En la mayoria de casos se puede ver que pasado cierto punto la probabilidad tiende a 1 y que el punto en donde se llega a esa tendencia depende del valor de m*n, entre mas bajo este, se necesita una probabilidad mayor para encontrar caminos efectivos, esto se puede observar tanto en las graficas, como en las tablas
+En la mayoria de casos se puede ver que pasado cierto punto la probabilidad tiende a 1 y que el punto en donde se llega a esa tendencia depende del valor de m*n, entre mas bajo este, se necesita una probabilidad mayor para encontrar caminos efectivos, esto se puede observar tanto en las graficas, como en las tablas.
