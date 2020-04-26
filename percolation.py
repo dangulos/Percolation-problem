@@ -59,8 +59,8 @@ def percolation(m,n,intervals, attempts):
                 results += 1
             #print(solution[1][2])
         #print('Result',results/200) 
-        percentage = results/200
-        error=ZAlphaHalf*np.sqrt((percentage*(1-percentage))/200)
+        percentage = results/attempts
+        error=ZAlphaHalf*np.sqrt((percentage*(1-percentage))/attempts)
         #print('theta(',p,') = ',percentage, '+-',error)
         dft = pd.DataFrame({"p":[p],"theta":[percentage],"error":[error]},columns = column_names)
         #print(dft)
@@ -69,11 +69,18 @@ def percolation(m,n,intervals, attempts):
     print(df)
     df.to_csv('data.csv')
     #df.plot()
-
+    
     df.plot(x='p', y='theta')
+    """
+    plt.table(cellText= df.to_numpy(),
+              rowLabels=range(0,intervals+1),
+              colLabels=column_names,
+              loc='center')
+    plt.subplots_adjust(left=0.2, top=0.8)
+    """
     plt.show()
 
-def main():#how to run: python percolation.py 10 10 [-i or --intervals] number of intervals 
+def main():#how to run: python percolation.py 10 10 [-i or --intervals] number of intervals [-a or --attempts] number of attempts
     parser = argparse.ArgumentParser()
     parser.add_argument("m")
     parser.add_argument("n")
