@@ -9,10 +9,11 @@ from collections import deque
 import depthfirst
 from mazes import Maze
 
-def percolation(m,n,intervals):
+def percolation(m,n,intervals, attempts):
     m = int(m)
     n = int(n)
     intervals = int(intervals)
+    attempts = int(attempts)
     deltaP = 1/intervals
     #Zalpha/2 para alpha = 99%
     ZAlphaHalf = 2.575
@@ -25,7 +26,7 @@ def percolation(m,n,intervals):
     for p in pValues:
         #print('Probability',p)
         results = 0
-        for attempts in range(0,200):
+        for attempt in range(0,attempts):
 
             M = np.zeros((m,n))
             s = np.random.uniform(0,1,m*n)
@@ -76,11 +77,12 @@ def main():#how to run: python percolation.py 10 10 [-i or --intervals] number o
     parser.add_argument("m")
     parser.add_argument("n")
     parser.add_argument("-i", "--intervals", nargs='?', const='intervals', default='10')
-    print(parser)
+    parser.add_argument("-a", "--attempts", nargs='?', const='attempts', default='200')
+    #print(parser)
     args = parser.parse_args()
-    print(args)
+    #print(args)
 
-    percolation(args.m,args.n,args.intervals)
+    percolation(args.m,args.n,args.intervals, args.attempts)
 
 if __name__ == "__main__":
     main()
