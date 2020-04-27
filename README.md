@@ -337,4 +337,10 @@ Gráfica correspondiente al cuarto caso de prueba
 
 ## Análisis de resultados
 
-En la mayoría de casos se puede ver que pasado cierto punto la probabilidad tiende a 1 y que el punto en donde se llega a esa tendencia depende del valor de m*n, entre más bajo este, se necesita una probabilidad mayor para encontrar caminos efectivos, pero aparte, tambien afecta la relacion entre los dos, como se puede ver en la ultima grafica, según las gráficas obtenidas se puede decir que se asemeja a una distribución normal o gaussiana.
+En la mayoría de casos se puede ver que pasado cierto punto la probabilidad tiende a 1 y que el punto en donde se llega a esa tendencia depende del valor de m*n, entre más bajo este, se necesita una probabilidad mayor para encontrar caminos efectivos, pero aparte, tambien afecta la relacion entre los dos, como se puede ver en la ultima grafica, según las gráficas obtenidas se puede decir que se asemeja a una distribución binomial.
+
+![Distribucion binomial](4grap.jpg)
+<p align="center">
+Gráfica correspondiente a la función de distribución de probabilidad binomial
+</p>
+
