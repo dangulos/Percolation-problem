@@ -30,9 +30,9 @@ Para realizar una simulacion se debe usar el siguiente comando:
 
 Donde n y m corresponden al tamaño de la matriz a usar.
 
-La programa consiste en tres partes, el percolation el cual contiene la lógica general y coordina las actividades, el mazes el cual se encarga de generar la roca como un conjunto de nodos y el depth-first-search que se encarga de buscar un camino en la roca generada.
+El programa consiste de tres partes, el percolation el cual contiene la lógica general y coordina las actividades, el mazes el cual se encarga de generar la roca como un conjunto de nodos y el depth-first-search que se encarga de buscar un camino en la roca generada.
 
-
+El siguiente UML explica el funcionamiento general del programa realizado:
 
 ![DIagrama UML de actividades](diagram.jpg)
 <p align="center">
